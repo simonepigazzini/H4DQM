@@ -157,7 +157,7 @@ int main(int argc, char *argv[])
   outFile->cd () ;
   outTree->Write ("",TObject::kOverwrite) ;
   outFile->Close () ;
-  cout << "[Unpacker]::[INFO]::" << outfname << " is closed" << endl;
+  cout << "[Unpacker]::[INFO]::" << outfname.str() << " is closed" << endl;
 
   //  rawFile->close () ;
   //  cout << "[Unpacker]::[INFO]::" <<  filename << " is closed." << endl;
